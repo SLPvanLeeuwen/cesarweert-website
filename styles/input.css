@@ -1,0 +1,48 @@
+@import "tailwindcss" source(none);
+@source "../site";
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("/fonts/bricolage-grotesque-latin-wght-normal.woff2") format("woff2");
+  font-weight: 200 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("/fonts/atkinson-hyperlegible-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("/fonts/atkinson-hyperlegible-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@theme {
+  --color-ink: #12313a;
+  --color-petrol: #1f5f66;
+  --color-sea: #e3efec;
+  --color-paper: #f8fbfa;
+  --color-amber: #f0a93b;
+  --color-mute: #496166;
+
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Atkinson Hyperlegible", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  :focus-visible {
+    outline: 3px solid var(--color-petrol);
+    outline-offset: 3px;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  summary {
+    cursor: pointer;
+  }
+}
