@@ -46,9 +46,3 @@
     cursor: pointer;
   }
 }
-
-@layer components {
-  .photo-frame {
-    @apply overflow-hidden rounded-2xl bg-white ring-1 ring-petrol/10;
-  }
-}
