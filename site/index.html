@@ -20,6 +20,10 @@
   <link rel="preload" href="fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2"
     crossorigin />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -321,13 +325,12 @@
         </div>
 
         <div class="space-y-6 self-start">
-          <a href="https://www.google.com/maps/search/?api=1&query=Maaseikerweg+45+6005+AA+Weert" target="_blank"
-            rel="noopener" class="photo-frame block"
-            aria-label="Open de route naar Gezondheidscentrum Weert in Google Maps">
-            <img src="media/gezondheidscentrum-ingang.webp"
-              alt="Voorgevel en ingang van Gezondheidscentrum Weert aan de Maaseikerweg" width="610" height="343"
-              class="block aspect-video w-full object-cover" loading="lazy" />
-          </a>
+          <!-- Leaflet Kaart Container -->
+          <div class="photo-frame block aspect-video w-full relative z-0"
+            aria-label="Kaart locatie Gezondheidscentrum Weert">
+            <div id="leaflet-map" class="absolute inset-0 h-full w-full"></div>
+          </div>
+
           <div class="photo-frame">
             <img src="media/gezondheidscentrum-bord.webp"
               alt="Bord bij het gebouw waarop Cesar oefentherapie onder Hoofdgebouw staat" width="610" height="343"
@@ -387,6 +390,7 @@
       class="rounded-full border-2 border-petrol py-3 text-center font-bold text-petrol">Bellen</a>
     <a href="afspraak-maken.html" class="rounded-full bg-amber py-3 text-center font-bold">Afspraak maken</a>
   </div>
+  <script src="js/script.js" defer></script>
 </body>
 
 </html>
