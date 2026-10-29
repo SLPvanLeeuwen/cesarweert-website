@@ -46,3 +46,9 @@
     cursor: pointer;
   }
 }
+
+@layer components {
+  .photo-frame {
+    @apply overflow-hidden rounded-2xl; 
+  }
+}
