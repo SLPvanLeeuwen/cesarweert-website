@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth motion-reduce:scroll-auto">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Folders | Oefentherapie Cesar Weert &amp; Stramproy</title>
+    <meta name="description"
+        content="Download of bekijk onze informatiefolders over oefentherapie, bekkenklachten, lage rugklachten en meer." />
+    <link rel="icon" href="media/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2"
+        crossorigin />
+    <link rel="preload" href="fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2"
+        crossorigin />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-paper font-sans text-ink antialiased pb-20 lg:pb-0">
+    <a href="#inhoud"
+        class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded focus:bg-amber focus:px-4 focus:py-2 focus:font-bold">Ga
+        naar de inhoud</a>
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 border-b border-petrol/10 bg-paper/95 backdrop-blur">
+        <div class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-3">
+            <a href="index.html" class="shrink-0" aria-label="Oefentherapie Cesar, naar de homepage">
+                <img src="media/logo.webp" alt="Oefentherapie Cesar, Weert &amp; Stramproy" width="331" height="116"
+                    class="h-12 w-auto" />
+            </a>
+            <nav class="hidden items-center gap-7 text-base font-bold lg:flex" aria-label="Hoofdmenu">
+                <div class="group relative">
+                    <button type="button" class="flex items-center gap-1 py-2 hover:text-petrol" aria-haspopup="true">
+                        Behandelingen
+                        <svg class="size-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path d="M5.5 7.5 10 12l4.5-4.5" stroke="currentColor" stroke-width="2" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <ul
+                        class="invisible absolute left-0 top-full w-72 rounded-xl border border-petrol/10 bg-paper p-2 opacity-0 shadow-xl transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
+                        <li><a class="block rounded-lg px-4 py-2.5 font-normal hover:bg-sea"
+                                href="individuele-oefentherapie.html">Individuele oefentherapie</a></li>
+                        <li><a class="block rounded-lg px-4 py-2.5 font-normal hover:bg-sea"
+                                href="groepsles-oefentherapie.html">Groepsles oefentherapie</a></li>
+                        <li><a class="block rounded-lg px-4 py-2.5 font-normal hover:bg-sea"
+                                href="slaapoefentherapie.html">Slaapoefentherapie</a></li>
+                        <li><a class="block rounded-lg px-4 py-2.5 font-normal hover:bg-sea"
+                                href="schroth-therapie-en-rugindegroei.html">Schroth-therapie en rugindegroei</a></li>
+                        <li><a class="block rounded-lg px-4 py-2.5 font-normal hover:bg-sea" href="otago.html">Otago</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="py-2 hover:text-petrol" href="team.html">Team</a>
+                <a class="py-2 hover:text-petrol" href="praktijkinfo.html">Praktijkinfo</a>
+                <a class="py-2 text-petrol" href="folders.html">Folders</a>
+                <a class="py-2 hover:text-petrol" href="contact.html">Contact</a>
+                <a href="afspraak-maken.html"
+                    class="rounded-full bg-amber px-5 py-2.5 text-ink transition hover:bg-ink hover:text-paper">Afspraak
+                    maken</a>
+            </nav>
+            <details class="group lg:hidden">
+                <summary
+                    class="flex size-11 cursor-pointer list-none items-center justify-center rounded-lg border border-petrol/20 [&::-webkit-details-marker]:hidden"
+                    aria-label="Menu openen of sluiten">
+                    <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" aria-hidden="true">
+                        <path d="M4 7h16M4 12h16M4 17h16" />
+                    </svg>
+                </summary>
+                <nav class="absolute inset-x-0 top-full border-b border-petrol/10 bg-paper px-6 pb-6 pt-2 shadow-xl"
+                    aria-label="Mobiel menu">
+                    <ul class="flex flex-col text-lg">
+                        <li><a class="block border-b border-petrol/10 py-3"
+                                href="individuele-oefentherapie.html">Individuele oefentherapie</a></li>
+                        <li><a class="block border-b border-petrol/10 py-3" href="team.html">Team</a></li>
+                        <li><a class="block border-b border-petrol/10 py-3"
+                                href="groepsles-oefentherapie.html">Groepsles oefentherapie</a></li>
+                        <li><a class="block border-b border-petrol/10 py-3"
+                                href="slaapoefentherapie.html">Slaapoefentherapie</a></li>
+                        <li><a class="block border-b border-petrol/10 py-3"
+                                href="schroth-therapie-en-rugindegroei.html">Schroth-therapie en rugindegroei</a></li>
+                        <li><a class="block border-b border-petrol/10 py-3" href="otago.html">Otago</a></li>
+                        <li><a class="block border-b border-petrol/10 py-3" href="praktijkinfo.html">Praktijkinfo</a>
+                        </li>
+                        <li><a class="block border-b border-petrol/10 py-3 font-bold text-petrol"
+                                href="folders.html">Folders</a></li>
+                        <li><a class="block py-3" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </details>
+        </div>
+    </header>
+
+    <main id="inhoud">
+        <section class="mx-auto max-w-4xl px-6 py-14 lg:py-24">
+            <h1 class="font-display text-4xl font-bold tracking-tight sm:text-5xl mb-6">OTAGO Valpreventie</h1>
+            <h2 class="font-display text-2xl font-bold text-petrol mb-8">Kans op vallen verkleinen? Wilt u dat ook?</h2>
+
+            <div class="space-y-6 text-xl leading-relaxed text-mute">
+                <p>
+                    Wanneer u ouder wordt, kunt u merken dat uw beenspierkracht afneemt, uw evenwicht en uw conditie
+                    achteruitgaat. Hierdoor kunt u onzeker worden en minder gaan bewegen. Dit kan ten koste gaan van uw
+                    zelfstandigheid en kans op vallen vergroten.
+                </p>
+                <p>
+                    Een ongeluk zit in een klein hoekje! Een losliggende mat, gladde vloer of kabels over de vloer
+                    kunnen er dan al voor zorgen dat u valt. Voor ouderen kan een valpartij grote gevolgen hebben en
+                    leiden tot ernstige verwondingen, zoals botbreuken. Val-ongelukken zijn in Nederland de meest
+                    voorkomende oorzaak van letsel bij ouderen!
+                </p>
+
+                <div class="rounded-xl border-l-4 border-amber bg-amber/10 p-6 my-8 text-ink">
+                    <strong>Bij ons kunt u terecht voor valpreventie:</strong> valtraining en het OTAGO-oefenprogramma.
+                    Een oefenprogramma ter valpreventie voor thuiswonende ouderen.
+                </div>
+
+                <p>
+                    <strong>Blijf in beweging!</strong> Bewegen levert een positieve bijdrage aan uw kwaliteit van leven
+                    en uw onafhankelijkheid. Uw botten blijven sterker, hart- en vaatziektes en diabetes kunnen worden
+                    voorkomen en u herstelt sneller na ziekte. Bewegen zorgt daarnaast ook voor een positieve invloed op
+                    stemming, geheugen, slaappatroon en sociale contacten.
+                </p>
+                <p>
+                    <strong>Wat kunt u eraan doen?</strong> Het OTAGO-oefenprogramma is een programma waarbij
+                    beenspierkracht, evenwicht en lenigheid worden geoefend. Oefeningen die belangrijk zijn om uw
+                    zelfstandigheid te behouden, zodat u ook nog allerlei leuke activiteiten kunt ondernemen zoals op
+                    visite gaan of uw hobby’s uitvoeren.
+                </p>
+                <p>
+                    Valtraining kan nodig zijn, evenals technieken om weer op te staan. Daarvoor is lenigheid en
+                    voldoende spierkracht gewenst die in het OTAGO-oefenprogramma ruimschoots aan de orde komen.
+                </p>
+                <p>
+                    <strong>Is het oefenprogramma iets voor u?</strong> Wanneer u merkt dat bijvoorbeeld het lopen, het
+                    opstaan uit de stoel of normale huishoudelijke taken meer moeite kosten, of wanneer u bang bent om
+                    te vallen, dan kunt u meedoen aan het OTAGO-oefenprogramma om deze problemen te verbeteren. Er wordt
+                    middels een aantal bezoeken aan huis of in de praktijk een op maat gemaakt schema opgesteld met
+                    oefeningen. Veiligheid staat voorop! Loopt u met een rollator of stok, dan kunt u ook zonder
+                    problemen deelnemen aan dit oefenprogramma want de oefeningen vinden plaats op of achter een stoel.
+                </p>
+            </div>
+
+            <div class="mt-14 rounded-2xl bg-sea p-8 lg:p-12 text-center">
+                <h3 class="font-display text-2xl font-bold mb-4">Directe Toegang Oefentherapie (DTO)</h3>
+                <p class="text-xl leading-relaxed text-mute max-w-2xl mx-auto mb-8">
+                    U kunt mét en zonder verwijzing van uw arts naar de oefentherapeut. DTO maakt oefentherapie voor
+                    iedereen rechtstreeks toegankelijk.
+                </p>
+                <p class="text-lg font-bold">Voor aanmelding of meer informatie (vermeldt hierbij dat het om
+                    valpreventie gaat):</p>
+                <div class="mt-4 flex flex-col sm:flex-row items-center justify-center gap-4 text-xl">
+                    <a href="tel:0495541700"
+                        class="rounded-full bg-amber px-6 py-3 font-bold transition hover:bg-ink hover:text-paper">Bel
+                        0495 541 700</a>
+                    <a href="contact.html"
+                        class="rounded-full border-2 border-petrol px-6 py-3 font-bold text-petrol transition hover:bg-petrol hover:text-paper">Contactformulier</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-paper">
+        <div class="mx-auto grid max-w-7xl gap-10 px-6 py-14 md:grid-cols-[1.2fr_1fr_1fr]">
+            <div>
+                <p class="font-display text-xl font-bold">Oefentherapie Cesar Weert &amp; Stramproy</p>
+                <address class="mt-3 text-lg not-italic text-mute">
+                    Gezondheidscentrum Weert<br />Maaseikerweg 45, 6005 AA Weert<br />
+                    Telefoon <a class="underline underline-offset-4" href="tel:0495541700">0495 541 700</a><br />
+                    E-mail <a class="underline underline-offset-4"
+                        href="mailto:info@cesarweert.nl">info@cesarweert.nl</a>
+                </address>
+                <a href="https://www.facebook.com/Oefentherapie-Cesar-Weert-Stramproy-161754030672459" target="_blank"
+                    rel="noopener" class="mt-4 inline-block font-bold text-petrol underline underline-offset-4">Volg ons
+                    op Facebook</a>
+            </div>
+            <nav aria-label="Behandelingen">
+                <p class="font-bold">Behandelingen</p>
+                <ul class="mt-3 space-y-2 text-lg text-mute">
+                    <li><a class="hover:text-petrol" href="individuele-oefentherapie.html">Individuele oefentherapie</a>
+                    </li>
+                    <li><a class="hover:text-petrol" href="groepsles-oefentherapie.html">Groepsles oefentherapie</a>
+                    </li>
+                    <li><a class="hover:text-petrol" href="slaapoefentherapie.html">Slaapoefentherapie</a></li>
+                    <li><a class="hover:text-petrol" href="schroth-therapie-en-rugindegroei.html">Schroth-therapie en
+                            rugindegroei</a></li>
+                    <li><a class="hover:text-petrol" href="otago.html">Otago</a></li>
+                </ul>
+            </nav>
+            <nav aria-label="Praktijk">
+                <p class="font-bold">Praktijk</p>
+                <ul class="mt-3 space-y-2 text-lg text-mute">
+                    <li><a class="hover:text-petrol" href="team.html">Team</a></li>
+                    <li><a class="hover:text-petrol" href="praktijkinfo.html">Praktijkinfo</a></li>
+                    <li><a class="hover:text-petrol" href="folders.html">Folders</a></li>
+                    <li><a class="hover:text-petrol" href="contact.html">Contact</a></li>
+                    <li><a class="hover:text-petrol" href="privacy.html">Privacyverklaring</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="bg-ink text-paper/80">
+            <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-6 py-6">
+                <p>&copy; Oefentherapie Cesar Weert &amp; Stramproy</p>
+                <img src="media/logo-kp.webp" alt="Keurmerk KP" width="115" height="117" class="size-14"
+                    loading="lazy" />
+            </div>
+        </div>
+    </footer>
+    <div
+        class="fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 gap-3 border-t border-petrol/10 bg-paper px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] lg:hidden">
+        <a href="tel:0495541700"
+            class="rounded-full border-2 border-petrol py-3 text-center font-bold text-petrol">Bellen</a>
+        <a href="afspraak-maken.html" class="rounded-full bg-amber py-3 text-center font-bold">Afspraak maken</a>
+    </div>
+</body>
+
+</html>
