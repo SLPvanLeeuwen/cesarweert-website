@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth motion-reduce:scroll-auto">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy | Oefentherapie Cesar Weert &amp; Stramproy</title>
+    <meta name="description"
+        content="Download of bekijk onze informatiefolders over oefentherapie, bekkenklachten, lage rugklachten en meer." />
+    <link rel="icon" href="media/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2"
+        crossorigin />
+    <link rel="preload" href="fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2"
+        crossorigin />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-paper font-sans text-ink antialiased pb-20 lg:pb-0">
+    <a href="#inhoud"
+        class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded focus:bg-amber focus:px-4 focus:py-2 focus:font-bold">Ga
+        naar de inhoud</a>
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 border-b border-petrol/10 bg-paper/95 backdrop-blur">
+        <div class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-3">
+            <a href="index.html" class="shrink-0" aria-label="Oefentherapie Cesar, naar de homepage">
+                <img src="media/logo.webp" alt="Oefentherapie Cesar, Weert &amp; Stramproy" width="331" height="116"
+                    class="h-12 w-auto" />
+            </a>
+            <nav class="hidden items-center gap-7 text-base font-bold lg:flex" aria-label="Hoofdmenu">
+                <div class="group relative">
+                    <button type="button" class="flex items-center gap-1 py-2 hover:text-petrol" aria-haspopup="true">
+                        Behandelingen
+                        <svg class="size-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path d="M5.5 7.5 10 12l4.5-4.5" stroke="currentColor" stroke-width="2" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <ul
+                        class="invisible absolute left-0 top-full w-72 rounded-xl border border-petrol/10 bg-paper p-2 opacity-0 shadow-xl transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
+                        <li><a class="block rounded-lg px-4 py-2.5 font-normal hover:bg-sea"
+                                href="individuele-oefentherapie.html">Individuele oefentherapie</a></li>
+                        <li><a class="block rounded-lg px-4 py-2.5 font-normal hover:bg-sea"
+                                href="groepsles-oefentherapie.html">Groepsles oefentherapie</a></li>
+                        <li><a class="block rounded-lg px-4 py-2.5 font-normal hover:bg-sea"
+                                href="slaapoefentherapie.html">Slaapoefentherapie</a></li>
+                        <li><a class="block rounded-lg px-4 py-2.5 font-normal hover:bg-sea"
+                                href="schroth-therapie-en-rugindegroei.html">Schroth-therapie en rugindegroei</a></li>
+                        <li><a class="block rounded-lg px-4 py-2.5 font-normal hover:bg-sea" href="otago.html">Otago</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="py-2 hover:text-petrol" href="team.html">Team</a>
+                <a class="py-2 hover:text-petrol" href="praktijkinfo.html">Praktijkinfo</a>
+                <a class="py-2 text-petrol" href="folders.html">Folders</a>
+                <a class="py-2 hover:text-petrol" href="contact.html">Contact</a>
+                <a href="afspraak-maken.html"
+                    class="rounded-full bg-amber px-5 py-2.5 text-ink transition hover:bg-ink hover:text-paper">Afspraak
+                    maken</a>
+            </nav>
+            <details class="group lg:hidden">
+                <summary
+                    class="flex size-11 cursor-pointer list-none items-center justify-center rounded-lg border border-petrol/20 [&::-webkit-details-marker]:hidden"
+                    aria-label="Menu openen of sluiten">
+                    <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" aria-hidden="true">
+                        <path d="M4 7h16M4 12h16M4 17h16" />
+                    </svg>
+                </summary>
+                <nav class="absolute inset-x-0 top-full border-b border-petrol/10 bg-paper px-6 pb-6 pt-2 shadow-xl"
+                    aria-label="Mobiel menu">
+                    <ul class="flex flex-col text-lg">
+                        <li><a class="block border-b border-petrol/10 py-3"
+                                href="individuele-oefentherapie.html">Individuele oefentherapie</a></li>
+                        <li><a class="block border-b border-petrol/10 py-3" href="team.html">Team</a></li>
+                        <li><a class="block border-b border-petrol/10 py-3"
+                                href="groepsles-oefentherapie.html">Groepsles oefentherapie</a></li>
+                        <li><a class="block border-b border-petrol/10 py-3"
+                                href="slaapoefentherapie.html">Slaapoefentherapie</a></li>
+                        <li><a class="block border-b border-petrol/10 py-3"
+                                href="schroth-therapie-en-rugindegroei.html">Schroth-therapie en rugindegroei</a></li>
+                        <li><a class="block border-b border-petrol/10 py-3" href="otago.html">Otago</a></li>
+                        <li><a class="block border-b border-petrol/10 py-3" href="praktijkinfo.html">Praktijkinfo</a>
+                        </li>
+                        <li><a class="block border-b border-petrol/10 py-3 font-bold text-petrol"
+                                href="folders.html">Folders</a></li>
+                        <li><a class="block py-3" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </details>
+        </div>
+    </header>
+
+    <main id="inhoud">
+        <section class="mx-auto max-w-4xl px-6 py-14 lg:py-24">
+            <h1 class="font-display text-4xl font-bold tracking-tight sm:text-5xl mb-12">Privacyverklaring</h1>
+
+            <div class="space-y-8 text-lg leading-relaxed text-mute">
+
+                <div>
+                    <h2 class="font-display text-2xl font-bold text-ink mb-3">Inleiding</h2>
+                    <p>
+                        Wij vinden het belangrijk dat de privacy van onze patiënten goed is geborgd. Dit
+                        privacyreglement beschrijft hoe wij omgaan met uw persoonsgegevens, waaronder uw medische
+                        gegevens. Als u vragen heeft over het privacyreglement kunt hiermee terecht bij uw behandelaar.
+                        Ook kunt u een e-mail sturen naar <a href="mailto:info@cesarweert.nl"
+                            class="text-petrol font-bold underline hover:text-amber">info@cesarweert.nl</a> of
+                        telefonisch contact opnemen met de praktijk via <a href="tel:0495541700"
+                            class="text-petrol font-bold underline hover:text-amber">0495-541700</a>.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="font-display text-2xl font-bold text-ink mb-3">Artikel 1 Definities</h2>
+                    <p class="mb-2">In dit privacyreglement wordt aan onderstaande begrippen de navolgende betekenis
+                        gegeven:</p>
+                    <ul class="list-disc space-y-2 pl-6 marker:text-petrol">
+                        <li><strong>Gegevens</strong> => de gegevens die betrekking hebben op een persoon</li>
+                        <li><strong>Praktijk</strong> => Oefentherapie Cesar Weert verwerkingsverantwoordelijke</li>
+                        <li><strong>Patiënt</strong> => een patiënt van de praktijk</li>
+                        <li><strong>Verwerking</strong> => een bewerking of geheel van bewerkingen met betrekking tot
+                            gegevens of geheel van gegevens al dan niet uitgevoerd via geautomatiseerde procedés, zoals
+                            het verzamelen, vastleggen, ordenen, structureren, opslaan, bijwerken of wijzigen, opvragen,
+                            raadplegen, gebruiken, verstrekken door middel van doorzending of op andere wijze ter
+                            beschikking stellen, aligneren of combineren, afschermen, wissen of vernietigen van gegevens
+                            (artikel 4 lid 2 Algemene Verordening Gegevensbescherming)</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="font-display text-2xl font-bold text-ink mb-3">Artikel 2 Toepasselijkheid</h2>
+                    <p>
+                        Dit privacyreglement is van toepassing op alle verwerkingen van persoonsgegevens door de
+                        praktijk die betrekking hebben op patiëntenzorg.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="font-display text-2xl font-bold text-ink mb-3">Artikel 3 Doelen</h2>
+                    <p class="mb-2">De praktijk kan de gegevens verwerken voor de volgende doelen:</p>
+                    <ul class="list-disc space-y-2 pl-6 marker:text-petrol">
+                        <li>het verlenen van oefentherapeutische zorg;</li>
+                        <li>het declareren van verleende oefentherapeutische zorg bij de patiënt of zorgverzekeraar;
+                        </li>
+                        <li>ten behoeve van kwaliteitsdoeleinden;</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="font-display text-2xl font-bold text-ink mb-3">Artikel 4 De gegevensverwerking</h2>
+                    <ol class="list-decimal space-y-4 pl-6 marker:text-petrol marker:font-bold">
+                        <li>Om goede zorg te kunnen verlenen worden gegevens over de behandeling vastgelegd in een
+                            dossier. Uw behandelend oefentherapeut heeft wettelijk een dossierplicht. De
+                            behandelingsovereenkomst vormt de grondslag voor het mogen verwerken van de gegevens. Alleen
+                            uw behandelend oefentherapeut en anderen die rechtstreeks betrokken zijn bij uw zorgvraag
+                            hebben toegang tot de gegevens voor zover dat nodig is om goede zorg te kunnen verlenen.
+                            Daarnaast worden de gegevens gebruikt om de verleende zorg te kunnen declareren.</li>
+                        <li>Als zorgaanbieder is de praktijk wettelijk verplicht te zorgen voor systematische bewaking
+                            van de kwaliteit van de geboden zorg. De gegevens kunnen daarvoor worden gebruikt. Wij
+                            zullen daarbij niet meer gegevens verwerken dan nodig is. Ook worden gegevens daar waar
+                            mogelijk gepseudonimiseerd of geanonimiseerd zodat deze niet (direct) herleidbaar zijn tot
+                            individuele personen.</li>
+                        <li>Als wij uw gegevens gebruiken voor wetenschappelijk onderzoek of ten behoeve van ons
+                            kwaliteitsbeleid, zullen wij u hierover informeren. Indien het er niet mee eens bent dat uw
+                            gegevens hiervoor gebruikt worden, kunt u dit aangeven bij uw behandelaar. Uw gegevens
+                            zullen dan niet meegenomen worden. Wij zullen in beide gevallen niet meer gegevens verwerken
+                            dan nodig is. Ook worden uw gegevens gepseudonimiseerd en/of geanonimiseerd zodat deze niet
+                            meer herleidbaar zijn tot individuele personen.</li>
+                        <li>Zorgverzekeraars met wie de praktijk een overeenkomst heeft controleren of gedeclareerde
+                            zorg rechtmatig is verleend. Zij kunnen in het kader van materiële controle inzage verlangen
+                            in dossiers. De praktijk is gehouden om hieraan medewerking te verlenen.</li>
+                        <li>Uw gegevens worden niet met derden gedeeld, tenzij sprake is van een van de hiervoor
+                            genoemde situaties of als u ons hiervoor schriftelijk toestemming heeft gegeven.</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h2 class="font-display text-2xl font-bold text-ink mb-3">Artikel 5 Beschrijving van de gegevens
+                    </h2>
+                    <p class="mb-2">De navolgende gegevens kunnen worden verwerkt:</p>
+                    <ul class="list-disc space-y-1 pl-6 marker:text-petrol">
+                        <li>naam</li>
+                        <li>adres/contactgegevens</li>
+                        <li>geboortedatum</li>
+                        <li>BSN nummer</li>
+                        <li>medische gegevens</li>
+                        <li>naam huisarts/andere zorgverleners</li>
+                        <li>gegevens van de ouder(s)/wettelijk vertegenwoordiger</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="font-display text-2xl font-bold text-ink mb-3">Artikel 6 Rechten</h2>
+                    <ol class="list-decimal space-y-4 pl-6 marker:text-petrol marker:font-bold">
+                        <li>Als patiënt heeft u het recht te weten dat gegevens over u worden verwerkt. Wij informeren u
+                            daarover in algemene zin door middel van dit privacyreglement. Wij, in het bijzonder uw
+                            behandelend oefentherapeut, informeert u ook in specifieke gevallen, bijvoorbeeld als een
+                            brief aan de huisarts wordt gestuurd over de voortgang of einde van de behandeling.</li>
+                        <li>U heeft als patiënt het recht op inzage in uw gegevens. Ook kunt u een kopie opvragen van
+                            het dossier waarin uw gegevens staan. Wij nemen een verzoek tot inzage of kopie zo snel als
+                            mogelijk in behandeling. Een kopie wordt bij voorkeur ‘in handen’ gegeven, waarbij wij
+                            vragen u te legitimeren met een geldig identiteitsbewijs. Deze voorzorgsmaatregel is om te
+                            voorkomen dat uw gegevens bij onbevoegden terechtkomen. Ook biedt het persoonlijk
+                            overhandigen de mogelijkheid om eventuele vragen te beantwoorden.</li>
+                        <li>U heeft als patiënt het recht om rectificatie te verzoeken als sprake is van een onjuist-
+                            en/of onvolledigheid in uw gegevens. Wij zullen eventuele onjuist- en/of onvolledigheden zo
+                            snel als mogelijk aanpassen.</li>
+                        <li>Als u gegevens wilt laten vernietigen kunt u daartoe een verzoek indienen. Wij vragen u om
+                            dit verzoek schriftelijk te doen en indien het om medische gegevens gaat zo mogelijk de
+                            beweegredenen te vermelden. De behandelend oefentherapeut beoordeelt binnen drie maanden na
+                            het verzoek of tot vernietiging wordt overgegaan. Als er een zwaarwegende reden is om het
+                            verzoek niet in te willigen, bijvoorbeeld als het informatie betreft die van aanmerkelijk
+                            belang is voor een ander dan de patiënt, kan besloten worden om niet tot vernietiging over
+                            te gaan. Als uw verzoek wordt afgewezen doen wij dat gemotiveerd.</li>
+                        <li>U kunt als patiënt een verklaring laten toevoegen aan uw dossier. Wij verzoeken u om deze
+                            verklaring aan uw behandelend oefentherapeut te overhandigen zodat dit aan uw dossier kan
+                            worden toegevoegd.</li>
+                        <li>Bij het uitoefenen van rechten als beschreven in dit artikel geldt ten aanzien van
+                            minderjarigen en onder curatele gestelde personen het volgende:
+                            <ul class="list-disc space-y-2 pl-6 mt-3 font-normal marker:text-petrol">
+                                <li>Betreft het een minderjarige tot 12 jaar dan worden de rechten door de wettelijk
+                                    vertegenwoordiger, doorgaans zijn dit de ouders, uitgeoefend;</li>
+                                <li>Betreft het een minderjarige in de leeftijd van 12 tot en met 15 jaar dan worden de
+                                    minderjarige en diens wettelijke vertegenwoordiger uitgeoefend;</li>
+                                <li>Betreft het een minderjarige vanaf 16 jaar dan kan de minderjarige zelf de rechten
+                                    uitoefenen;</li>
+                                <li>Betreft het een persoon die onder curatele is gesteld dan worden de rechten door de
+                                    wettelijk vertegenwoordiger uitgeoefend.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h2 class="font-display text-2xl font-bold text-ink mb-3">Artikel 7 Bewaartermijn</h2>
+                    <ol class="list-decimal space-y-2 pl-6 marker:text-petrol marker:font-bold">
+                        <li>Het dossier met behandelinformatie wordt gedurende vijftien jaar na afloop van de
+                            behandelingsovereenkomst bewaard, tenzij goed zorgverlenerschap met zich meebrengt dat de
+                            gegevens langer worden bewaard.</li>
+                        <li>Voor dossiers met behandelinformatie van minderjarige personen geldt dat de bewaartermijn
+                            van vijftien jaar begint te lopen vanaf de leeftijd van 18 jaar.</li>
+                        <li>In andere gevallen dan in dit artikel vermeld worden gegevens niet langer bewaard dan nodig
+                            is voor het doel.</li>
+                        <li>Uitzondering op het voorgaande in dit artikel is van toepassing als op uw uitdrukkelijk
+                            schriftelijk verzoek gegevens zijn vernietigd.</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h2 class="font-display text-2xl font-bold text-ink mb-3">Artikel 8 Geheimhouding</h2>
+                    <p class="mb-4">
+                        Wij gaan vertrouwelijk met uw persoonsgegevens om. Dit betekent dat wij gegevens niet aan derden
+                        verstrekken behoudens de hierna genoemde uitzonderingen. Ook leggen wij een
+                        geheimhoudingsverplichting op aan onze medewerkers en externe partijen die de praktijk
+                        inschakelt ten behoeve van onze activiteiten, zoals bijvoorbeeld leveranciers van software.
+                    </p>
+                    <p class="mb-2">Uitzondering op de geheimhoudingsverplichting is uitsluitend mogelijk als:</p>
+                    <ul class="list-disc space-y-2 pl-6 marker:text-petrol">
+                        <li>u hiervoor schriftelijk toestemming heeft gegeven;</li>
+                        <li>het verstrekken van de gegevens noodzakelijk is voor een goede zorgverlening en de
+                            ontvanger, bijvoorbeeld de huisarts, eveneens betrokken is bij de zorgvraag;</li>
+                        <li>er zwaarwegende redenen zijn om het medisch beroepsgeheim te doorbreken, bijvoorbeeld als
+                            sprake is van een noodtoestand in de zin van een conflict van plichten of bij signalen die
+                            wijzen op kindermishandeling en/of huiselijk geweld; of</li>
+                        <li>wij daartoe gehouden zijn op grond van een wettelijke verplichting of in een kracht van
+                            gewijsde gegane rechterlijke uitspraak.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="font-display text-2xl font-bold text-ink mb-3">Artikel 9 Informatiebeveiliging</h2>
+                    <p class="mb-2">Wij nemen alle passende technische en organisatorische maatregelen die
+                        redelijkerwijs mogelijk zijn om de beveiliging van uw gegevens te waarborgen. Dit betreft onder
+                        meer:</p>
+                    <ul class="list-none space-y-2 pl-4">
+                        <li>(a) het gebruik van beveiligde en versleutelde verbindingen; app Siilo,
+                            administratieprogramma Winmens, declaratieprogramma Vecozo.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="font-display text-2xl font-bold text-ink mb-3">Artikel 11 Wijzigingen</h2>
+                    <p>
+                        De praktijk kan het privacyreglement eenzijdig aanpassen, bijvoorbeeld als de wetgeving wijzigt.
+                        Wij zullen u in dat geval via onze website <a href="https://www.cesarweert.nl" target="_blank"
+                            rel="noopener"
+                            class="text-petrol font-bold underline hover:text-amber">www.cesarweert.nl</a> informeren.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="font-display text-2xl font-bold text-ink mb-3">Artikel 12 Klachten</h2>
+                    <p class="mb-4">
+                        Hoewel wij al het nodige doen om uw privacy te borgen kan het zijn dat u niet tevreden bent over
+                        de wijze waarop uw gegevens worden verwerkt. Als u een klacht heeft kunt u dit bespreken met uw
+                        behandelaar of de klachtenfunctionaris. De klachtenfunctionaris is te bereiken op <a
+                            href="tel:0303100929"
+                            class="text-petrol font-bold underline hover:text-amber">030-3100929</a> of per e-mail <a
+                            href="mailto:info@klachtenloketparamedici.nl"
+                            class="text-petrol font-bold underline hover:text-amber">info@klachtenloketparamedici.nl</a>.
+                        Ook kan schriftelijk een klacht worden ingediend bij praktijkhouders van de praktijk
+                        Oefentherapie Cesar, Maaseikerweg 45, 6005 AA Weert.
+                    </p>
+                    <p class="mb-8">
+                        Het staat u te allen tijde vrij om uw klacht bij de Autoriteit Persoonsgegevens in te dienen.
+                    </p>
+
+                    <p class="text-sm font-bold text-ink/60 border-t border-petrol/10 pt-6">
+                        Versie d.d. 24-05-2018
+                    </p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-paper">
+        <div class="mx-auto grid max-w-7xl gap-10 px-6 py-14 md:grid-cols-[1.2fr_1fr_1fr]">
+            <div>
+                <p class="font-display text-xl font-bold">Oefentherapie Cesar Weert &amp; Stramproy</p>
+                <address class="mt-3 text-lg not-italic text-mute">
+                    Gezondheidscentrum Weert<br />Maaseikerweg 45, 6005 AA Weert<br />
+                    Telefoon <a class="underline underline-offset-4" href="tel:0495541700">0495 541 700</a><br />
+                    E-mail <a class="underline underline-offset-4"
+                        href="mailto:info@cesarweert.nl">info@cesarweert.nl</a>
+                </address>
+                <a href="https://www.facebook.com/Oefentherapie-Cesar-Weert-Stramproy-161754030672459" target="_blank"
+                    rel="noopener" class="mt-4 inline-block font-bold text-petrol underline underline-offset-4">Volg ons
+                    op Facebook</a>
+            </div>
+            <nav aria-label="Behandelingen">
+                <p class="font-bold">Behandelingen</p>
+                <ul class="mt-3 space-y-2 text-lg text-mute">
+                    <li><a class="hover:text-petrol" href="individuele-oefentherapie.html">Individuele oefentherapie</a>
+                    </li>
+                    <li><a class="hover:text-petrol" href="groepsles-oefentherapie.html">Groepsles oefentherapie</a>
+                    </li>
+                    <li><a class="hover:text-petrol" href="slaapoefentherapie.html">Slaapoefentherapie</a></li>
+                    <li><a class="hover:text-petrol" href="schroth-therapie-en-rugindegroei.html">Schroth-therapie en
+                            rugindegroei</a></li>
+                    <li><a class="hover:text-petrol" href="otago.html">Otago</a></li>
+                </ul>
+            </nav>
+            <nav aria-label="Praktijk">
+                <p class="font-bold">Praktijk</p>
+                <ul class="mt-3 space-y-2 text-lg text-mute">
+                    <li><a class="hover:text-petrol" href="team.html">Team</a></li>
+                    <li><a class="hover:text-petrol" href="praktijkinfo.html">Praktijkinfo</a></li>
+                    <li><a class="hover:text-petrol" href="folders.html">Folders</a></li>
+                    <li><a class="hover:text-petrol" href="contact.html">Contact</a></li>
+                    <li><a class="hover:text-petrol" href="privacy.html">Privacyverklaring</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="bg-ink text-paper/80">
+            <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-6 py-6">
+                <p>&copy; Oefentherapie Cesar Weert &amp; Stramproy</p>
+                <img src="media/logo-kp.webp" alt="Keurmerk KP" width="115" height="117" class="size-14"
+                    loading="lazy" />
+            </div>
+        </div>
+    </footer>
+    <div
+        class="fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 gap-3 border-t border-petrol/10 bg-paper px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] lg:hidden">
+        <a href="tel:0495541700"
+            class="rounded-full border-2 border-petrol py-3 text-center font-bold text-petrol">Bellen</a>
+        <a href="afspraak-maken.html" class="rounded-full bg-amber py-3 text-center font-bold">Afspraak maken</a>
+    </div>
+</body>
+
+</html>
