@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // 1. Contact formulier logica (alleen uitvoeren als het formulier bestaat op deze pagina)
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
@@ -45,7 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 2. Leaflet kaart logica (alleen uitvoeren als de kaart-div bestaat op deze pagina)
     const mapContainer = document.getElementById('leaflet-map');
     if (mapContainer) {
         // Coördinaten voor Maaseikerweg 45, Weert
@@ -63,5 +61,26 @@ document.addEventListener('DOMContentLoaded', () => {
         // Voeg een marker toe met een popup
         const marker = L.marker([lat, lng]).addTo(map);
         marker.bindPopup("<b>Gezondheidscentrum Weert</b><br>Maaseikerweg 45").openPopup();
+    }
+
+
+    const header = document.getElementById('main-header');
+    
+    if (header) {
+        let lastScrollTop = 0;
+        
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Controleer of we naar beneden scrollen en we niet helemaal bovenaan zijn
+            if (scrollTop > lastScrollTop && scrollTop > header.offsetHeight) {
+                // Scroll down: verberg header (schuif hem 100% omhoog)
+                header.classList.add('-translate-y-full');
+            } else {
+                // Scroll up: toon header weer
+                header.classList.remove('-translate-y-full');
+            }
+            lastScrollTop = scrollTop;
+        });
     }
 });
